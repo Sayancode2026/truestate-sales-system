@@ -1,8 +1,4 @@
-Below is your full document converted into **professional `ARCHITECTURE.md` GitHub format** — clean, structured, and ready to commit.
 
----
-
-```markdown
 # 🧩 TruEstate Sales System — Architecture Documentation
 
 ## 1️⃣ System Overview

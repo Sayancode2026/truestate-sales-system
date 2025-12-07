@@ -1,11 +1,9 @@
 
 
----
 
-````markdown
 # 🏢 TruEstate Sales Management System
 
-A **high-performance full-stack retail sales management application** featuring advanced **search, filtering, sorting, and pagination** designed to efficiently handle **large-scale transactional data**.
+A **high-performance full-stack retail sales management application** featuring advanced **search, filtering, sorting, and pagination**, designed to efficiently handle **large-scale transactional data**.
 
 ---
 
@@ -43,11 +41,12 @@ Supports both **multi-select** and **range-based** filters:
 ✔ **Filter options cached in Redis** (TTL = 1 hour)
 
 ### 🔄 Sorting System
-| Sort Field | Order |
-|------------|-------|
-| Date | Newest first |
-| Quantity | Asc/Desc |
-| Customer Name | Alphabetical |
+
+| Sort Field      | Order             |
+|-----------------|-----------------|
+| Date            | Newest first     |
+| Quantity        | Asc/Desc         |
+| Customer Name   | Alphabetical     |
 
 🔹 Server-side ordering using dynamic SQL `ORDER BY` mapping  
 🔹 Sort state persists in URL and remains compatible with filters/search
@@ -60,7 +59,7 @@ Supports both **multi-select** and **range-based** filters:
   - Current page
   - Total pages
   - Record count
-  - Navigation flags (hasNext, hasPrev)
+  - Navigation flags (`hasNext`, `hasPrev`)
 - Pagination preserves search, filters & sorting state
 
 ---
@@ -83,7 +82,7 @@ npm install
 
 Create `.env` file:
 
-```
+```env
 PORT=5000
 DB_HOST=localhost
 DB_PORT=5432
@@ -119,7 +118,7 @@ npm install
 
 Create `.env` file:
 
-```
+```env
 VITE_API_URL=http://localhost:5000/api
 ```
 
@@ -171,5 +170,7 @@ This project is licensed under the **MIT License**.
 
 For contributions or issues, open a ticket in the **Issues** section.
 
----
+```
 
+
+```

@@ -8,19 +8,18 @@ const { Pool } = pg;
 const pool = new Pool({
   user: process.env.DB_USER || 'postgres',
   host: process.env.DB_HOST || 'localhost',
-  database: process.env.DB_NAME ,
+  database: process.env.DB_NAME,
   password: process.env.DB_PASSWORD,
   port: process.env.DB_PORT || 5432,
-  
-  
-  max: 50, 
+  ssl: {
+    rejectUnauthorized: false  // Required for AWS RDS
+  },
+  max: 50,
   min: 10,
   idleTimeoutMillis: 30000,
   connectionTimeoutMillis: 5000,
-  maxUses: 7500, 
+  maxUses: 7500,
   allowExitOnIdle: false,
-  
-  
   keepAlive: true,
   keepAliveInitialDelayMillis: 10000,
 });

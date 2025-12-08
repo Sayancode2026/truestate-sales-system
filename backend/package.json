@@ -8,7 +8,8 @@
         "start": "node src/index.js",
         "dev": "nodemon src/index.js",
         "db:setup": "node src/database/setup.js",
-        "db:seed": "node --max-old-space-size=4096 src/database/seed.js"
+        "db:seed": "node --max-old-space-size=4096 src/database/seed.js",
+        "build": "npm install"
     },
     "keywords": [
         "sales",

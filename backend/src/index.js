@@ -50,6 +50,18 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 
+app.get('/', (req, res) => {
+  res.json({
+    success: true,
+    message: 'TruEstate Sales Management API',
+    version: '1.0.0',
+    endpoints: {
+      health: '/api/health',
+      sales: '/api/sales'
+    }
+  });
+});
+
 app.use((req, res) => {
   res.status(404).json({ 
     success: false,

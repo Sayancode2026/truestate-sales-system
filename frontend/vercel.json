@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "rewrites": [
       {
@@ -6,4 +7,14 @@
       }
     ]
   }
+=======
+{
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "/index.html"
+      }
+    ]
+  }
+>>>>>>> a0ace52 (Remove old backend folder)
   
